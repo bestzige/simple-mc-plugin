@@ -1,0 +1,16 @@
+name: ${project.name}
+version: ${project.version}
+main: dev.bestzige.simplemcplugin.SimpleMcPlugin
+api-version: '1.21'
+folia-supported: true
+author: BestZige
+description: Paper/Folia plugin client for Simple MC API
+commands:
+  simplemc:
+    description: Manage Simple MC API plugin
+    usage: /simplemc <reload|sync|wallet|player>
+    aliases: [ smc ]
+permissions:
+  simplemc.admin:
+    description: Allows SimpleMCPlugin admin commands
+    default: op

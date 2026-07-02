@@ -1,0 +1,24 @@
+api:
+  base-url: "http://localhost:8080/"
+  token: "default_api_token"
+  connect-timeout-seconds: 5
+  read-timeout-seconds: 10
+  write-timeout-seconds: 10
+  debug-logging: false
+
+sync:
+  player-join: true
+  retry-delay-ticks: 100
+  announce-failures-to-console: true
+
+messages:
+  prefix: "<gray>[<aqua>SimpleMC</aqua>]</gray> "
+  reload: "<green>Configuration reloaded.</green>"
+  no-permission: "<red>You do not have permission.</red>"
+  player-only: "<red>This command can only be used by a player.</red>"
+  sync-started: "<yellow>Sync queued.</yellow>"
+  sync-success: "<green>Player sync completed.</green>"
+  sync-failed: "<red>Player sync failed: <message></red>"
+  player-lookup: "<green>Player:</green> <username> <gray>|</gray> <green>UUID:</green> <uuid> <gray>|</gray> <green>Rank:</green> <rank>"
+  player-lookup-failed: "<red>Player lookup failed: <message></red>"
+  wallet: "<green>Coins:</green> <coins> <gray>|</gray> <green>Gems:</green> <gems>"
